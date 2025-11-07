@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laalii | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="blink">BAKKIYALAKSHMI E</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#domains">Domains</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#doubt">Doubts</a></li>
+      </ul>
+    </nav>
+    <button id="mode-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+  <div class="about-container">
+    <!-- correct, simple, relative path -->
+    <img src=".vscode/bakki.jpg" alt="Bakkiyalakshmi E" class="profile-photo">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hi! I’m <strong>BAKKIYALAKSHMI E</strong>, an Engineering student passionate about software development, AI, and problem-solving. 
+      I love learning new technologies and building real-world projects.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Resume -->
+  <section id="resume" class="section resume-section">
+  <h2>Resume</h2>
+  <div class="resume-center">
+    <a href="bakkiyalakshmi_resume (1).pdf" download class="btn">📄 Download Resume</a>
+  </div>
+</section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Project</h2>
+    <div class="project">
+      <h3>Automated Food Quality Analysis Using Machine Learning and Image Processing</h3>
+      <p>This project uses computer vision and machine learning to automatically check the freshness of fruits and vegetables. A YOLOv8 model detects and identifies food items in an image, and features like color and texture are analyzed using a machine learning classifier (e.g., Random Forest) to label each item as fresh or spoiled. The system includes a Tkinter-based GUI for easy image upload or live webcam testing, providing a fast and reliable alternative to manual inspection for quality control and food waste reduction.</p>
+    </div>
+  </section>
+
+  <!-- Domains -->
+  <section id="domains" class="section">
+    <h2>Interested Domains</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Artificial Intelligence</li>
+      <li>Machine Learning</li>
+      <li>Android App Development</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>C, Python, Java</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Git, MySQL, VS Code</li>
+      <li>Problem-Solving, Teamwork</li>
+    </ul>
+  </section>
+
+  <!-- certification -->
+  
+<section id="certifications" class="section">
+  <h2>Certifications</h2>
+  <div class="cert-container">
+    <div class="cert-card">
+      <h3> Foundations of User Experience (UX) Design(Google)</h3>
+      <br>
+      <p>Earned from <strong>Coursera</strong> – Learned the basics of user-centered design, usability, and creating intuitive digital experiences.</p><br>
+      <a href="Bakkiyalakshmi E(Coursera).pdf" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+     <br>
+    <div class="cert-card">
+      <h3> Introduction to Internet of Things</h3>
+      <br>
+      <p>Completed on <strong>NPTL</strong> – Learned the fundamentals of IoT, including connected devices, sensors, and real-time data communication.</p><br>
+      <a href="Introduction to Internet of Things.pdf" target="_blank" class="btn">View Certificate</a>
+    </div> 
+    <br>
+    <div class="cert-card">
+      <h3> Implant</h3>
+      <br>
+      <p>Completed in <strong>Trios Technology</strong> – Got hads-on Experience on ARTIFICIAL 
+INTELIGENCE .</p><br>
+      <a href="BAKKIYALAKSHMI E-212223220012 (inplant).pdf" target="_blank" class="btn">View Certificate</a>
+    </div> 
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:bakkiyalakshmiethiraj1101@gmail.com">bakkiyalakshmiethiraj1101@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bakkiyalakshmi-ethiraj-a615022a0" target="_blank">https://www.linkedin.com/in/bakkiyalakshmi-ethiraj-a615022a0</a></p>
+    <p>GitHub: <a href="https://github.com/Bakkiyalakshmiethiraj" target="_blank">https://github.com/Bakkiyalakshmiethiraj</a></p>
+  </section>
+
+  <!-- Doubt Clarifying Box -->
+  <section id="doubt" class="section">
+    <h2>Doubt Clarifying Box</h2>
+    <p>If you have any questions or doubts about my portfolio, feel free to reach out below 👇</p>
+    <form id="doubt-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Doubt:</label>
+      <textarea id="message" name="message" placeholder="Type your doubt here..." required></textarea>
+
+      <button type="submit" class="btn">Send Doubt</button>
+    </form>
+    <p id="response-msg"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <span class="blink">BAKKIYALAKSHMI E</span>. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
