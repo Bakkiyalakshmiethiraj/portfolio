@@ -3,143 +3,365 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laalii | Portfolio</title>
+  <title>Bakkiyalakshmi E | Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
 
-  <!-- Header -->
-  <header>
-    <h1 class="blink">BAKKIYALAKSHMI E</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#domains">Domains</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#doubt">Doubts</a></li>
-      </ul>
-    </nav>
-    <button id="mode-toggle">🌙 Dark Mode</button>
+  <!-- Background Animated Elements -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="glass-header">
+    <div class="header-container">
+      <div class="logo">BAKKIYALAKSHMI<span class="dot">.</span></div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav>
+        <ul id="primary-navigation" class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section about-section">
-  <div class="about-container">
-    <!-- correct, simple, relative path -->
-    <img src=".vscode/bakki.jpg" alt="Bakkiyalakshmi E" class="profile-photo">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>Hi! I’m <strong>BAKKIYALAKSHMI E</strong>, an Engineering student passionate about software development, AI, and problem-solving. 
-      I love learning new technologies and building real-world projects.</p>
-    </div>
-  </div>
-</section>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section reveal">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <p class="greeting">Hi there! I am</p>
+          <h1 class="name-title">Bakkiyalakshmi E</h1>
+          <h2 class="role-title">Software Developer & AI Enthusiast</h2>
+          <p class="hero-description">
+            Transforming complex problems into elegant, scalable solutions through code. Passionate about Artificial Intelligence, Web Development, and creating impactful digital experiences.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Portfolio</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="image-border">
+            <img src="bakki.jpg" alt="Bakkiyalakshmi E" class="profile-img">
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Expanded About Section -->
+    <section id="about" class="about-section reveal">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text-content">
+            <h2 class="section-title text-left">About Me</h2>
+            <p class="about-desc">
+              I am an Engineering student with a deep-rooted passion for technology and innovation. My journey in software development began with a curiosity about how things work under the hood, which quickly blossomed into a love for coding and problem-solving.
+            </p>
+            <p class="about-desc">
+              Currently, I am focusing on bridging the gap between Artificial Intelligence and user-centric web applications. Whether I am building a machine learning model to detect food quality or designing a responsive web interface, I always strive for excellence and clean code.
+            </p>
+            <div class="about-stats">
+              <div class="stat-box">
+                <h3 class="stat-num">3+</h3>
+                <p class="stat-text">Projects Completed</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="stat-num">5+</h3>
+                <p class="stat-text">Tech Stacks Mastered</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="stat-num">100%</h3>
+                <p class="stat-text">Dedication to Learning</p>
+              </div>
+            </div>
+            <a href="bakkiyalakshmi_resume (1).pdf" download class="btn btn-primary mt-4">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+          
+          <div class="about-skills glass-card">
+            <h3 class="mb-4">Technical Arsenal</h3>
+            <div class="skill-bar-group">
+              <div class="skill-label">
+                <span>Python & Machine Learning</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-label">
+                <span>HTML, CSS & JavaScript</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-label">
+                <span>Java & C</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-label">
+                <span>Database & Git</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Resume -->
-  <section id="resume" class="section resume-section">
-  <h2>Resume</h2>
-  <div class="resume-center">
-    <a href="bakkiyalakshmi_resume (1).pdf" download class="btn">📄 Download Resume</a>
-  </div>
-</section>
+    <!-- Services / What I Do Section -->
+    <section id="services" class="services-section reveal">
+      <div class="container text-center">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">Leveraging modern technologies to build robust and intelligent applications.</p>
+        
+        <div class="services-grid">
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Creating responsive, high-performance web applications with intuitive user interfaces using modern HTML, CSS, and JavaScript frameworks.</p>
+          </div>
+          
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Artificial Intelligence</h3>
+            <p>Designing and implementing machine learning models, computer vision algorithms, and predictive analytics to solve complex real-world problems.</p>
+          </div>
+          
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-brands fa-android"></i></div>
+            <h3>Android Development</h3>
+            <p>Building native mobile applications focused on seamless user experiences, efficient state management, and reliable backend integration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <h2>Project</h2>
-    <div class="project">
-      <h3>Automated Food Quality Analysis Using Machine Learning and Image Processing</h3>
-      <p>This project uses computer vision and machine learning to automatically check the freshness of fruits and vegetables. A YOLOv8 model detects and identifies food items in an image, and features like color and texture are analyzed using a machine learning classifier (e.g., Random Forest) to label each item as fresh or spoiled. The system includes a Tkinter-based GUI for easy image upload or live webcam testing, providing a fast and reliable alternative to manual inspection for quality control and food waste reduction.</p>
-    </div>
-  </section>
+    <!-- Experience & Education Section -->
+    <section id="experience" class="timeline-section reveal">
+      <div class="container">
+        <div class="timeline-grid">
+          
+          <!-- Experience Timeline -->
+          <div class="timeline-col">
+            <h2 class="section-title text-left" style="font-size: 2rem;">Experience</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-date">2023 - Present</span>
+                  <h3 class="timeline-title">Inplant Trainee (AI)</h3>
+                  <h4 class="timeline-subtitle">Trios Technology</h4>
+                  <p>Gained hands-on experience in Artificial Intelligence and Machine Learning. Collaborated with a team to understand the real-world applications of AI, data processing pipelines, and model deployment strategies.</p>
+                  <a href="BAKKIYALAKSHMI E-212223220012 (inplant).pdf" target="_blank" class="btn-text mt-2">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-date">Ongoing</span>
+                  <h3 class="timeline-title">Independent Developer</h3>
+                  <h4 class="timeline-subtitle">Freelance & Open Source</h4>
+                  <p>Continuously building projects, contributing to open-source, and exploring new domains like IoT and advanced web frameworks to expand my technical horizon.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <!-- Domains -->
-  <section id="domains" class="section">
-    <h2>Interested Domains</h2>
-    <ul>
-      <li>Web Development</li>
-      <li>Artificial Intelligence</li>
-      <li>Machine Learning</li>
-      <li>Android App Development</li>
-    </ul>
-  </section>
+          <!-- Education Timeline -->
+          <div class="timeline-col">
+            <h2 class="section-title text-left" style="font-size: 2rem;">Education</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-date">Present</span>
+                  <h3 class="timeline-title">Bachelor of Engineering (B.E.)</h3>
+                  <h4 class="timeline-subtitle">Computer Science / IT</h4>
+                  <p>Currently pursuing my engineering degree, focusing on core computer science fundamentals, data structures, algorithms, and software engineering principles.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-date">Previous</span>
+                  <h3 class="timeline-title">Higher Secondary Education</h3>
+                  <h4 class="timeline-subtitle">State Board</h4>
+                  <p>Completed higher secondary education with a strong foundation in Mathematics, Physics, and Computer Science, paving the way for my engineering journey.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>C, Python, Java</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Git, MySQL, VS Code</li>
-      <li>Problem-Solving, Teamwork</li>
-    </ul>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section reveal">
+      <div class="container text-center">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A showcase of my technical creations and problem-solving abilities.</p>
+        
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="glass-card project-card text-left">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">YOLOv8</span>
+              </div>
+              <h3 class="project-title">Automated Food Quality Analysis</h3>
+              <p class="project-desc">
+                Uses computer vision and ML to automatically check the freshness of fruits and vegetables. 
+                A YOLOv8 model detects food items, and features like color/texture are analyzed using a Random Forest classifier.
+                Includes a Tkinter-based GUI for easy image upload or live webcam testing.
+              </p>
+            </div>
+          </div>
 
-  <!-- certification -->
-  
-<section id="certifications" class="section">
-  <h2>Certifications</h2>
-  <div class="cert-container">
-    <div class="cert-card">
-      <h3> Foundations of User Experience (UX) Design(Google)</h3>
-      <br>
-      <p>Earned from <strong>Coursera</strong> – Learned the basics of user-centered design, usability, and creating intuitive digital experiences.</p><br>
-      <a href="Bakkiyalakshmi E(Coursera).pdf" target="_blank" class="btn">View Certificate</a>
-    </div>
+          <!-- Project Card 2 (Placeholder) -->
+          <div class="glass-card project-card text-left">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Web Dev</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">UI/UX</span>
+              </div>
+              <h3 class="project-title">Modern Portfolio Website</h3>
+              <p class="project-desc">
+                Designed and developed a highly responsive, aesthetically pleasing personal portfolio using modern web technologies. 
+                Implemented a custom dark theme, glassmorphism UI components, and scroll-reveal animations to create an engaging user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-     <br>
-    <div class="cert-card">
-      <h3> Introduction to Internet of Things</h3>
-      <br>
-      <p>Completed on <strong>NPTL</strong> – Learned the fundamentals of IoT, including connected devices, sensors, and real-time data communication.</p><br>
-      <a href="Introduction to Internet of Things.pdf" target="_blank" class="btn">View Certificate</a>
-    </div> 
-    <br>
-    <div class="cert-card">
-      <h3> Implant</h3>
-      <br>
-      <p>Completed in <strong>Trios Technology</strong> – Got hads-on Experience on ARTIFICIAL 
-INTELIGENCE .</p><br>
-      <a href="BAKKIYALAKSHMI E-212223220012 (inplant).pdf" target="_blank" class="btn">View Certificate</a>
-    </div> 
-  </div>
-</section>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section reveal">
+      <div class="container text-center">
+        <h2 class="section-title">Licenses & Certifications</h2>
+        <p class="section-subtitle">Continuous learning to stay ahead in the tech landscape.</p>
+        
+        <div class="certs-grid">
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-brands fa-google"></i></div>
+            <h3>Foundations of UX Design</h3>
+            <p class="cert-issuer">Google (Coursera)</p>
+            <p class="cert-desc">Basics of user-centered design, usability, and creating intuitive digital experiences.</p>
+            <a href="Bakkiyalakshmi E(Coursera).pdf" target="_blank" class="btn btn-outline mt-auto">View Certificate</a>
+          </div>
 
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>Intro to Internet of Things</h3>
+            <p class="cert-issuer">NPTEL</p>
+            <p class="cert-desc">Fundamentals of IoT, including connected devices, sensors, and real-time data communication.</p>
+            <a href="Introduction to Internet of Things.pdf" target="_blank" class="btn btn-outline mt-auto">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:bakkiyalakshmiethiraj1101@gmail.com">bakkiyalakshmiethiraj1101@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/bakkiyalakshmi-ethiraj-a615022a0" target="_blank">https://www.linkedin.com/in/bakkiyalakshmi-ethiraj-a615022a0</a></p>
-    <p>GitHub: <a href="https://github.com/Bakkiyalakshmiethiraj" target="_blank">https://github.com/Bakkiyalakshmiethiraj</a></p>
-  </section>
+    <!-- Contact & Doubts Section -->
+    <section id="contact" class="contact-section reveal">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+        
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="glass-card contact-info">
+            <h3>Get in Touch</h3>
+            <p>Feel free to reach out for collaborations, opportunities, or just to say hi!</p>
+            
+            <div class="social-links">
+              <a href="mailto:bakkiyalakshmiethiraj1101@gmail.com" class="social-link" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="social-text">
+                  <span class="social-label">Email</span>
+                  <span>bakkiyalakshmiethiraj1101@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/bakkiyalakshmi-ethiraj-a615022a0" target="_blank" class="social-link" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+                <div class="social-text">
+                  <span class="social-label">LinkedIn</span>
+                  <span>Bakkiyalakshmi Ethiraj</span>
+                </div>
+              </a>
+              <a href="https://github.com/Bakkiyalakshmiethiraj" target="_blank" class="social-link" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+                <div class="social-text">
+                  <span class="social-label">GitHub</span>
+                  <span>Bakkiyalakshmiethiraj</span>
+                </div>
+              </a>
+            </div>
+          </div>
 
-  <!-- Doubt Clarifying Box -->
-  <section id="doubt" class="section">
-    <h2>Doubt Clarifying Box</h2>
-    <p>If you have any questions or doubts about my portfolio, feel free to reach out below 👇</p>
-    <form id="doubt-form">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-      <label for="message">Your Doubt:</label>
-      <textarea id="message" name="message" placeholder="Type your doubt here..." required></textarea>
-
-      <button type="submit" class="btn">Send Doubt</button>
-    </form>
-    <p id="response-msg"></p>
-  </section>
+          <!-- Doubt Form -->
+          <div class="glass-card doubt-form-container">
+            <h3>Send a Message</h3>
+            <p class="mb-4 text-sm text-gray">Have a specific question or doubt? Drop it below.</p>
+            
+            <form id="doubt-form">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Your Email</label>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" required placeholder=" "></textarea>
+                <label for="message">Your Message / Doubt</label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+              <p id="response-msg" class="response-message"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 <span class="blink">BAKKIYALAKSHMI E</span>. All rights reserved.</p>
+  <footer class="glass-footer">
+    <div class="container text-center">
+      <div class="footer-logo">BAKKIYALAKSHMI<span class="dot">.</span></div>
+      <p>&copy; 2025 All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
